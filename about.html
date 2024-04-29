@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>  Technical Documentation: API Integration Guide</title>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "format-detection" content = "telephone=no" />
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/touchTouch.css">
+    
+    <script src="js/jquery.js"></script>
+    <script  src="js/touchTouch.jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.animate-colors-min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    
+    <script>
+        $(window).load(function() {	 
+            
+           // Initialize the gallery
+            $('.thumb').touchTouch();
+            
+           //btn-link hover
+           $('.color1').hover(function(){
+        		$(this).parent().parent().parent().find('figure span').stop().animate({ 'top': "100%"}, 450, "easeOutExpo")	
+        		$(this).stop().animate({ 'color': "#f26522"}, 150, "easeOutExpo");				 
+        	}, function(){	
+        		$(this).parent().parent().parent().find('figure span').stop().animate({ 'top': "0"}, 450, "easeOutExpo")		
+        		$(this).stop().animate({ 'color': "#FFFFFF"}, 350, "easeOutExpo");			 
+        	})  
+           $('.color2').hover(function(){
+        		$(this).parent().parent().parent().find('figure span').stop().animate({ 'top': "100%"}, 450, "easeOutExpo")		
+        		$(this).stop().animate({ 'color': "#f222b2"}, 150, "easeOutExpo")				 
+        	}, function(){	
+        		$(this).parent().parent().parent().find('figure span').stop().animate({ 'top': "0"}, 450, "easeOutExpo")	
+        		$(this).stop().animate({ 'color': "#FFFFFF"}, 350, "easeOutExpo")			 
+        	})  
+           $('.color3').hover(function(){
+        		$(this).parent().parent().parent().find('figure span').stop().animate({ 'top': "100%"}, 450, "easeOutExpo")		
+        		$(this).stop().animate({ 'color': "#f2b422"}, 150, "easeOutExpo")				 
+        	}, function(){	
+        		$(this).parent().parent().parent().find('figure span').stop().animate({ 'top': "0"}, 450, "easeOutExpo")	
+        		$(this).stop().animate({ 'color': "#FFFFFF"}, 350, "easeOutExpo")			 
+        	})  
+           $('.color4').hover(function(){
+        		$(this).parent().parent().parent().find('figure span').stop().animate({ 'top': "100%"}, 450, "easeOutExpo")		
+        		$(this).stop().animate({ 'color': "#5e22f2"}, 150, "easeOutExpo")				 
+        	}, function(){	
+        		$(this).parent().parent().parent().find('figure span').stop().animate({ 'top': "0"}, 450, "easeOutExpo")	
+        		$(this).stop().animate({ 'color': "#FFFFFF"}, 350, "easeOutExpo")			 
+        	})  
+            	
+        });
+    </script>
+    
+    
+</head>
+<body class="bg1">
+
+<div class="cont">
+<!--==============================header=================================-->
+<header id="header">
+    <div class="width_1">
+          <h2 class="navbar-brand navbar-brand_"><a href="index.html">  Technical Documentation: API Integration Guide</a></h2><br><br><br>
+          <div class="menuheader">
+            <nav class="navbar navbar-default navbar-static-top my_navbar" role="navigation">
+                <ul class="nav sf-menu">
+                  <li class=""><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  
+                  <li><a href="Revathi Jaya_New_Resume.pdf">Resume</a></li>
+                </ul>
+            </nav>
+          </div>
+    </div>
+</header>
+
+
+<h5>Introduction: </h5>
+The Web Services API Integration Guide provides developers with detailed instructions on integrating external applications and systems with our Web Services API. This guide covers the necessary steps, authentication methods, endpoints, and sample code snippets to facilitate seamless integration.<br>
+Audience: This guide is intended for developers, software engineers, and technical teams responsible for integrating their applications or systems with our Web Services API.<br>
+Prerequisites: <br>Before proceeding with the API integration, developers should have:
+•   Basic understanding of RESTful APIs and SOAP protocols.<br>
+•   Access to Web Services API documentation and credentials.<br>
+•   Knowledge of programming languages supported by the API (e.g., Java, Python, PHP).<br>
+Contents:<br>
+Overview of Web Services API:<br>
+o   Introduction to the Web Services API, including its functionalities, endpoints, and supported data formats (e.g., JSON, XML).<br>
+o   Explanation of API versioning, authentication methods (e.g., OAuth, API keys), and rate limiting policies.<br>
+Authentication and Authorization:<br>
+o   Detailed instructions on how to authenticate API requests using various authentication methods supported by the API.<br>
+o   Explanation of authorization scopes and permissions required for accessing specific API endpoints or performing actions.<br>
+Endpoints and Operations:<br>
+o   Description of available API endpoints, their functionalities, and required parameters.<br>
+o   Sample requests and responses for each endpoint, including headers, query parameters, request bodies, and response payloads.<br>
+o   Guidance on handling pagination, filtering, sorting, and searching capabilities.<br>
+Integration Steps:<br>
+o   Step-by-step instructions on how to set up and configure API integration within the target application or system.<br>
+o   Configuration options, settings, and parameters required for successful integration.<br>
+o   Code snippets and examples demonstrating API calls and data exchange processes using popular programming languages.<br>
+Error Handling and Troubleshooting:<br>
+o   Guidelines for handling API errors, status codes, and error messages returned by the API.
+o   Troubleshooting tips and common issues encountered during integration, along with recommended solutions.<br>
+Best Practices and Recommendations:<br>
+o   Best practices for secure API integration, including data encryption, token management, and endpoint security.<br>
+o   Performance optimization techniques to improve API responsiveness and reduce latency.
+o   Recommendations for version control, documentation, and testing strategies.
+Additional Resources:<br>
+o   Links to relevant API documentation, developer tools, SDKs, client libraries, and support resources.<br>
+o   Contact information for technical support or developer assistance.<br>
+Conclusion: The Web Services API Integration Guide equips developers with the knowledge and resources needed to seamlessly integrate their applications or systems with our Web Services API. By following the guidelines outlined in this document, developers can efficiently leverage the capabilities of our API to enhance the functionality and interoperability of their software solutions.
+
+
+
+
+
+
+
+</body>
+</html>
